@@ -1,0 +1,700 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #E2E2E1;
+    color: #0F171A;
+}
+
+header{
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 100;
+}
+
+nav {
+    font-family: "Ysabeau Office", sans-serif;
+    margin-right: 7rem;
+}
+
+nav a{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border: 1px solid ;
+    border-radius: 25px;
+    padding: 7px 25px;
+    }
+
+.link-orange{
+    color: #0f171ace;
+}
+.link-orange:hover{
+    color: white;
+    background-color: #0f171ace;
+    border-color: #0f171ace;
+}
+.link-orange.active{
+    color: white;
+    background-color: #0f171ace;
+    border-color: #0f171ace;
+}
+
+.link-pink{
+    color: #CB055F;
+}
+.link-pink:hover{
+    color: white;
+    background-color: #CB055F;
+    border-color: #CB055F;
+}
+.link-pink.active{
+    background-color: #CB055F;
+    color: #F3F2F2;
+    border-color: #CB055F;
+}
+
+.link-violet{
+    color: #900A9D;
+}
+.link-violet:hover{
+    color: white;
+    background-color: #900A9D;
+    border-color: #900A9D;
+}
+.link-violet.active{
+    color: white;
+    background-color: #900A9D;
+    border-color: #900A9D;
+}
+
+.link-blue{
+    color: #371BA6;
+}
+.link-blue:hover{
+    color: white;
+    background-color: #371BA6;
+    border-color: #371BA6;
+}
+.link-blue.active{
+    color: white;
+    background-color: #371BA6;
+    border-color: #371BA6;
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-image: url(media/paper.png);
+    background-size: 150%;
+    background-attachment: fixed; 
+    z-index: -1;
+}
+
+.home-content h1{
+    font-family: 'Rubik';
+    font-size: 12rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(203, 5, 95, 0.8), rgba(55, 27, 166, 0.8));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.home-content h3{
+    font-family: 'Rubik';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: #0f171aa9;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 12vw ;
+    border-radius: 200px;
+    box-shadow: 0 0 25px solid;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.direction{
+    background: linear-gradient(#cb055ebe,#371ba6be);
+    position: relative;
+    z-index: 1;
+    
+}
+
+.direction h1{
+    font-family: 'Rubik';
+    font-size: 7rem;
+    font-weight: 900;
+    color: #f3f2f2b1;
+}
+
+.direction h3{
+    font-family: 'Ysabeau Office';
+    font-size: 2rem;
+    line-height: 1rem;
+    color: #0f171aa9;
+    
+}
+
+.direction p{
+    font-family: 'Ysabeau Office';
+    font-size: 1.5rem;
+    padding: 20px 0 30px 0;
+    color: #F3F2F2;
+    text-align: justify;
+}
+
+.direction a{
+    font-family: 'Ysabeau Office';
+    font-size: 2rem;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 7px 25px;
+    color: #F3F2F2;
+}
+
+.direction a:hover{
+    background: #F3F2F2;
+    color: #0F171A;
+    border: #F3F2F2;
+}
+
+.direction-art{
+    padding-bottom: 20rem;
+    padding-top: 10rem;
+    max-width: 500px;
+
+}
+
+.direction-dev{
+    text-align: right;
+    margin-left: 550px;
+}
+
+@media (max-width: 768px) {
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+    }
+
+    nav:active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        justify-content: center;
+    }
+
+    nav a:hover,
+    nav a:active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem;
+    }
+    .home {
+      flex-direction: column; 
+      text-align: center;
+    }
+  
+    .home-content h1 {
+      font-size: 4rem; 
+    }
+  
+    .home-content h3 {
+      font-size: 1.2rem;
+    }
+  
+    .home-img img {
+        border-radius: 0px;
+        padding-top: 40rem;
+      width: 20vw; 
+    }
+  
+    .direction h1 {
+      font-size: 4rem; 
+    }
+  
+    .direction p {
+      font-size: 1.2rem; 
+    }
+  
+    .direction-art, .direction-dev {
+      text-align: center; 
+      margin: 0;
+    }
+  }
+/*=========PAGE DESIGN=========*/
+
+.hero{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 8rem;
+    background-image: url(media/paper.png);
+    background-size: 150%;
+
+}
+
+.hero-content h1{
+    font-family: 'Rubik';
+    font-size: 12rem;
+    font-weight: 900;
+    color: #cb055ebd;
+
+}
+
+.hero-content p, .hero-dev-content p, .hero-contact-content p{
+    font-family: 'Ysabeau Office';
+    font-size: 1.5rem;
+    padding: 20px 0 10px 0;
+    margin-right: 100px;
+    color: #0F171A;
+    text-align: justify;
+}
+
+.bloc{
+    
+    text-align: right;
+    margin-left: 600px;
+}
+
+
+.jeu, .refontesc, .refontetdy, .antjecoco, .app, .maps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 300px;
+    margin-top: 15vw;
+
+}
+
+.maps .photo-container{
+    margin-top: 50px;
+}
+
+.texte h1{
+    font-size: 6rem;
+    font-family: 'Rubik';
+    color: #0f171abb;
+    margin-top: 2vw;
+
+}
+
+.texte p{
+    font-family: 'Ysabeau Office';
+    font-size: 1.4rem;
+    margin-top: 1.6vw;
+    margin-right: 8vw;
+    text-align: justify;
+}
+
+.rects {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 2vw;
+}
+
+.rect1, .rect2, .rect3,
+.rect4, .rectr1, .rectr2, .rectr3, 
+.recttdy1, .recttdy2, .recttdy3, .recttdy4, 
+.rectatc1, .rectatc2, .rectatc3, .rectatc4, 
+.meev1, .meev2, .meev3 {
+    width: 4vw;
+    height: 2vw;
+    margin: 10px 0;
+}
+
+.rect1{
+    background: #000000;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.rect2{
+    background-color: #5E3A2E;
+}
+
+.rect3{
+    background-color: #AF7C58;
+}
+
+.rect4{
+    background-color: #BB9B77;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.rectr1{
+    background: #5F4B3F;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.rectr2{
+    background-color: #CAA175;
+}
+
+.rectr3{
+    background-color: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.recttdy1{
+    background: #0D1338;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.recttdy2{
+    background-color: #F6911B;
+}
+
+.recttdy3{
+    background-color: #E73E25;
+
+}
+.recttdy4{
+    background-color: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.rectatc1{
+    background: #140B06;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.rectatc2{
+    background-color: #B77640;
+}
+
+.rectatc3{
+    background-color: #C5974C;
+
+}
+.rectatc4{
+    background-color: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.meev1{
+    background: #140B06;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.meev2{
+    background: #00FE9D;
+}
+
+.meev3{
+    background-color: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.video-container {
+    width: 100%; 
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+}
+
+video {
+    width: 70%;
+    height: auto; 
+}
+
+img{
+    width: 70%; 
+    margin-left: 15%;
+    height: auto;
+}
+
+
+/*=========PAGE DEV=========*/
+
+.hero-dev{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 8rem;
+    background-image: url(media/paper.png);
+    background-size: 150%;
+}
+
+.hero-dev-content h1{
+    font-family: 'Rubik';
+    font-size: 12rem;
+    font-weight: 900;
+    color: #910a9db4;
+}
+
+/*=========PAGE CONTACT=========*/
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info a {
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 1.5rem;
+    color: #0F171A; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px; 
+    font-size: 2rem; 
+    color: #371BA6; 
+}
+
+.contact-info a:hover i {
+    color: #cb055e; 
+}
+
+.contact-info a:hover {
+    color: #cb055e; 
+}
+
+/*=========PAGE CONTACT=========*/
+
+.hero-contact{
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 8rem;
+    background-image: url(media/paper.png);
+    background-size: 150%;
+}
+
+.hero-contact-content h1{
+    font-family: 'Rubik';
+    font-size: 12rem;
+    font-weight: 900;
+    color: #371ba6ba;
+}
+
+footer {
+    background-color: #0f171a;
+    color: #f3f3f3;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .footer-links a {
+    color: #f3f3f3;
+    text-decoration: none;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .footer-links a:hover {
+    color: #cb055e;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footer-social a {
+    color: #f3f3f3;
+    font-size: 1.5rem;
+  }
+  
+  .footer-social a:hover {
+    color: #cb055e;
+  }
+  
+  .footer-copyright p {
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+    }
+    
+    .footer-social {
+      justify-content: center;
+    }
+  }
+  
+
+@media (max-width: 1200px) {
+    .hero {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero-content{
+        padding-top: 30rem;
+    }
+
+    .hero-content h1, .hero-dev-content h1, .hero-contact h1{
+        font-size: 6rem; 
+    }
+
+    .hero-content p, .hero-dev-content p, .hero-contact p{
+        font-size: 1.5rem; 
+        padding: 20px 0 50px 0; 
+        margin-right: 20px;
+    }
+
+    .hero-contact p{
+        padding-top: 30rem;
+    }
+
+    .bloc {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .jeu, .refontesc, .refontetdy, .antjecoco, .app, .maps {
+        grid-template-columns: 1fr; 
+        margin-top: 8vw; 
+        height: auto; 
+    }
+
+    .rects {
+        justify-content: center; 
+
+    }
+
+    .texte h1 {
+        font-size: 4rem; 
+    }
+
+    .texte p {
+        font-size: 1.2rem;
+        margin-right: 3vw;
+    }
+
+    .video-container video, img {
+        width: 90%; 
+        margin-left: 5%; 
+    }
+
+    
+}
+
+
+
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column; 
+        gap: 1.5rem; 
+        background-size: cover; 
+    }
+
+    .hero-content h1, .hero-dev-content h1, .hero-contact h1{
+        font-size: 4rem; 
+    }
+
+    .hero-content p, .hero-dev-content p, .hero-contact p {
+        font-size: 1.5rem; 
+        padding: 10px 0 30px 0;
+    }
+    .hero-contact p {
+        padding-top: 30rem;
+    }
+
+    .bloc {
+        margin-left: 0; /* Supprimer la marge gauche */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .jeu, .refontesc, .refontetdy, .antjecoco, .app, .maps {
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+        margin-top: 5vw; /* Réduire l'espacement */
+        height: auto; /* Ajuster la hauteur */
+    }
+
+    .texte h1 {
+        font-size: 3rem; /* Réduire la taille du titre */
+    }
+
+    .texte p {
+        font-size: 1rem; 
+        margin-right: 2vw; 
+    }
+
+    .rects {
+        justify-content: center; 
+        margin-top: 1vw;
+    }
+
+    .video-container video, img {
+        width: 95%; 
+        margin-left: 0; 
+    }
+}
+
+
